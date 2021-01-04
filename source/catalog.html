@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Вязание на заказ</title>
+  </head>
+  <body class="page-body">
+    <header class="page-header">
+      <nav class="page-header__main-nav main-nav">
+        <div class="main-nav__logo">
+          <a class="logo" href="">
+            <img class="logo__image" src="" alt="">
+          </a>
+        </div>
+        <button class="main-nav__toggle">
+          <span class="visually-hidden">Открыть мобильное меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог Товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Новые поступления</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Распродажа</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-menu">
+        <ul class="user-menu__list">
+          <li class="user-menu__item">
+            <a href="" class="user-menu__link">Поиск по сайту</a>
+          </li>
+          <li class="user-menu__item">
+            <a href="" class="user-menu__link cart">Корзина: <span class="cart__value">Пока пуста</span></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="page-main">
+      <div class="page-main__header">
+        <h1 class="page-main__title">Каталог товаров</h1>
+      </div>
+      <section class="page-main__catalog catalog">
+        <h2 class="visually-hidden">Список товаров</h2>
+        <article class="catalog__product product">
+          <picture>
+            <img class="product__image" src="img/product__1-mobile.jpg"
+              srcset="img/product__1-mobile@2x.jpg 2x" alt="Вязанный зайчик в голубом костюме">
+          </picture>
+          <h3 class="product__name">
+            <a class="product__link" href="#">Зайчик-попрыгайчик</a>
+          </h3>
+          <p class="product__description">Рост 30 см, вес 200 г</p>
+          <div class="product__buy">
+            <span class="product__price">1200 руб.</span>
+            <a class="product__add-cart" href="#">
+            </a>
+          </div>
+        </article>
+        <article class="catalog__product product">
+          <picture>
+            <img class="product__image" src="img/product__2-mobile.jpg"
+              srcset="img/product__2-mobile@2x.jpg 2x" alt="Вязанная корзинка с бельём">
+          </picture>
+          <h3 class="product__name">
+            <a class="product__link" href="#">Корзинка для белья</a>
+          </h3>
+          <p class="product__description">Диаметр 15 см, высота 10 см</p>
+          <div class="product__buy">
+            <span class="product__price">690 руб.</span>
+            <a class="product__add-cart" href="#">
+            </a>
+          </div>
+        </article>
+        <article class="catalog__product product">
+          <picture>
+            <img class="product__image" src="img/product__3-mobile.jpg"
+              srcset="img/product__3-mobile@2x.jpg 2x" alt="Большая вязанная корзинка с игрушками">
+          </picture>
+          <h3 class="product__name">
+            <a class="product__link" href="#">Большая корзинкадля игрушек</a>
+          </h3>
+          <p class="product__description">Диаметр 30 см, высота 30 см</p>
+          <div class="product__buy">
+            <span class="product__price">1 500 руб.</span>
+            <a class="product__add-cart" href="#">
+            </a>
+          </div>
+        </article>
+      </section>
+      <article class="catalog__product-video product-video">
+        <h3 class="product-video__title">Процесс производства</h3>
+        <div class="product-video__content">
+          <picture>
+            <img class="product-video__image-overlay" src="img/video-mobile.jpg"
+              srcset="img/video-mobile@2x.jpg 2x" alt="Вязанная корзинка серо-бирюзового цвета">
+          </picture>
+          <video class="product-video__video" src=""></video>
+          <a class="product-video__button" href="#"></a>
+        </div>
+        <p class="product-video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="button product-video__button" href="#">Сделать заказ</a>
+      </article>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <a class="logo" href="#">
+            <img class="logo__image" src="" alt="">
+          </a>
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__link" href="#">
+            <span class="copyright__text">Разработано</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
