@@ -1,0 +1,54 @@
+.contacts__title {
+  @include section-title;
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.contacts__item {
+  font-size: 14px;
+  line-height: 30px;
+
+  color: $basic-grey;
+}
+
+.contacts__link {
+  text-decoration: none;
+  color: $basic-grey;
+}
+
+.contacts__link--mail {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: #62d1ba;
+  }
+
+  &:hover,
+  &:focus {
+    color:  #62d1ba;
+  }
+
+  &:active {
+    &::before {
+      opacity: 0.1;
+    }
+  }
+}
+
+.contacts__button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
