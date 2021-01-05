@@ -1,0 +1,17 @@
+@mixin status {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@mixin section-title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: $basic-black;
+}
