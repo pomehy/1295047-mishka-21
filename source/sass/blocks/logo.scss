@@ -1,3 +1,16 @@
-.logo {
+.logo--header {
   @include status;
+}
+
+.logo--footer {
+  &:hover,
+  &:focus {
+    .logo__icon {
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
