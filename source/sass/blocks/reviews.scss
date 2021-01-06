@@ -1,3 +1,7 @@
+.reviews__wrapper {
+  @include container;
+}
+
 .reviews__title {
   @include section-title;
 }

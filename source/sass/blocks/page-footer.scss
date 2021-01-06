@@ -1,0 +1,11 @@
+.page-footer {
+  background-color: $bg-color;
+}
+
+.page-footer__wrapper {
+  @include container;
+}
+
+.page-footer__logo {
+  display: none;
+}

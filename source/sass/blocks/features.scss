@@ -1,3 +1,7 @@
+.features__wrapper {
+  @include container;
+}
+
 .features__title {
   @include section-title;
 }

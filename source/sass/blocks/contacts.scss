@@ -1,3 +1,7 @@
+.contacts__wrapper {
+  @include container;
+}
+
 .contacts__title {
   @include section-title;
 }

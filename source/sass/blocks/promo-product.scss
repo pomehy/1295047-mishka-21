@@ -1,3 +1,7 @@
+.promo-product__wrapper {
+  @include container;
+}
+
 .promo-product__title {
   @include section-title;
 }
