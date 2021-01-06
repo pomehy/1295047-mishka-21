@@ -62,7 +62,6 @@
 
     border: 2px solid $basic-grey;
     border-radius: 50%;
-
   }
 
   &::after {
@@ -165,7 +164,7 @@
   padding-right: 30px;
   padding-bottom: 16px;
 
-  font-family: "OpenSans", Arial, sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;

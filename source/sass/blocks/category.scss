@@ -84,13 +84,13 @@
   &:hover,
   &:focus {
     .category__icon {
-      fill:rgba($fancy-color-dark, 0.7%)
+      fill: rgba($fancy-color-dark, 0.7%);
     }
   }
 
   &:active {
     .category__icon {
-      fill:rgba($fancy-color-dark, 0.3%)
+      fill: rgba($fancy-color-dark, 0.3%);
     }
   }
 }
