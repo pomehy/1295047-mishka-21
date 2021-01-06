@@ -1,3 +1,7 @@
+.order-form__wrapper {
+  @include container;
+}
+
 .order-form__description {
   font-size: 13px;
   line-height: 24px;
@@ -6,6 +10,9 @@
 }
 
 .order-form__fieldset {
+  margin: 0;
+  padding: 0;
+
   border: none;
 }
 
@@ -15,6 +22,12 @@
   line-height: 16px;
   color: $fancy-color;
   text-transform: uppercase;
+}
+
+.order-form__item {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .order-form__label {
@@ -81,7 +94,7 @@
   }
 }
 
-.order-form__input--radio:checked + .order-form__label--radio {
+.order-form__radio:checked + .order-form__label--radio {
   &::after {
     display: block;
   }
@@ -139,8 +152,80 @@
   }
 }
 
-.order-form__input--checkbox:checked + .order-form__label--checkbox {
+.order-form__checkbox:checked + .order-form__label--checkbox {
   &::after {
     display: block;
   }
+}
+
+.order-form__input {
+  z-index: 1;
+  width: 100%;
+  padding-top: 16px;
+  padding-right: 30px;
+  padding-bottom: 16px;
+
+  font-family: "OpenSans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+
+  color: $basic-grey;
+
+  background-color: transparent;
+
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid $basic-black;
+
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: rgba($basic-grey, 0.3%);
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $fancy-color;
+
+    + .order-form__icon {
+      fill: $fancy-color;
+    }
+  }
+}
+
+.order-form__icon {
+  position: absolute;
+  right: 0;
+
+  fill: rgba($basic-black, 0.2%);
+}
+
+.order-form__input--textarea {
+  width: 100%;
+  min-height: 142px;
+  padding-top: 17px;
+  padding-right: 17px;
+  padding-bottom: 17px;
+  padding-left: 17px;
+
+  color: $basic-black;
+
+  border: 2px solid $basic-grey;
+  border-radius: 0;
+
+  resize: none;
+
+  outline: transparent;
+}
+
+.order-form__note {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.order-form__button {
+  width: 100%;
 }
