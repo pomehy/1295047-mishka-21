@@ -27,12 +27,20 @@
   }
 }
 
+.category__item-inner {
+  display: flex;
+  width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+
 .category__link {
   width: 100%;
   padding-top: 24px;
-  padding-right: 30px;
   padding-bottom: 31px;
-  padding-left: 30px;
 
   font-weight: 700;
   font-size: 19px;
