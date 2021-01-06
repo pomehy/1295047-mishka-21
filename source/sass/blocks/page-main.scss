@@ -1,5 +1,5 @@
 .page-main__wrapper {
-@include container;
+  @include container;
 }
 
 .page-main__header {
@@ -11,4 +11,13 @@
   font-size: 27px;
   line-height: 30px;
   text-align: center;
+}
+
+.page-main__promo-product {
+  padding-top: 31px;
+  padding-bottom: 36px;
+}
+
+.page-main__features {
+   padding-top: 31px;
 }

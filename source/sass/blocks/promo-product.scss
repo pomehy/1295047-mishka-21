@@ -3,10 +3,16 @@
 }
 
 .promo-product__title {
+  margin-top: 0;
+  margin-bottom: 4px;
+
   @include section-title;
 }
 
 .promo-product__subtitle {
+  margin-top: 0;
+  margin-bottom: 18px;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
@@ -21,17 +27,19 @@
   color: $basic-grey;
 }
 
-.promo-product__item {
-  font-size: 15px;
-  line-height: 20px;
-  color: $basic-grey;
+.promo-product__description-list {
+  margin-top: 15px;
+  margin-bottom: 28px;
 }
 
-.promo-product__value {
-  margin: 0;
+.promo-product__image {
+  display: flex;
 }
 
 .promo-product__price {
+  margin-top: 25px;
+  margin-bottom: 25px;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;

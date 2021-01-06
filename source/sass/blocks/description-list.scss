@@ -1,0 +1,21 @@
+.description-list__item {
+  display: flex;
+  align-items: center;
+
+  padding-top: 12px;
+  padding-bottom: 9px;
+
+  font-size: 15px;
+  line-height: 20px;
+  color: $basic-grey;
+
+  border-bottom: 1px solid #ececec;
+}
+
+.description-list__termin {
+  min-width: 100px;
+}
+
+.description-list__value {
+  margin: 0;
+}

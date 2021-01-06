@@ -1,8 +1,16 @@
+.intro {
+  background-color: #fafafa;
+}
+
 .intro__wrapper {
   @include container;
 }
 
 .intro__title {
+  margin: 0;
+  padding-top: 73px;
+  padding-bottom: 119px;
+
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;

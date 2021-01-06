@@ -1,3 +1,20 @@
+.page-header {
+  padding-top: 20px;
+  padding-bottom: 17px;
+
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+
+  box-sizing: border-box
+}
+
 .page-header__wrapper {
   @include container;
+}
+
+.page-header__main-nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

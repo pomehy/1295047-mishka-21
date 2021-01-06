@@ -1,4 +1,6 @@
 .main-nav__list {
+  display: none;
+
   margin: 0;
   padding: 0;
 
@@ -14,4 +16,20 @@
   text-decoration: none;
 
   @include status;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 2px;
+  right: -4px;
+
+  padding: 15px;
+
+  background-color: transparent;
+  background-image: url("../img/decor/toggle-menu-closed.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border: none;
+  box-sizing: border-box;
 }
