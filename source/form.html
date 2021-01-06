@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Вязание на заказ</title>
 </head>
-
 <body class="page-body">
   <header class="page-header">
     <nav class="page-header__main-nav main-nav">
@@ -47,7 +46,9 @@
   </header>
   <main class="page-main">
     <div class="page-main__header">
-      <h1 class="page-main__title">Вязание на заказ</h1>
+      <div class="page-main__wrapper">
+        <h1 class="page-main__title">Вязание на заказ</h1>
+      </div>
     </div>
     <section class="page-main__order-form">
       <h2 class="visually-hidden">Форма заказа</h2>
@@ -56,33 +57,33 @@
           заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <fieldset class="order-form__fieldset">
           <legend class="order-form__legend">Тип</legend>
-          <input type="radio" id="decor" name="category" value="decor" checked>
-          <label for="decor">Аксессуар для интерьера</label>
-          <input type="radio" id="toy" name="category" value="toy">
-          <label for="toy">Детская игрушка</label>
+          <input class="order-form__input order-form__input--radio visually-hidden" type="radio" id="decor" name="category" value="decor" checked>
+          <label class="order-form__label order-form__label--radio" for="decor">Аксессуар для интерьера</label>
+          <input class="order-form__input order-form__input--radio visually-hidden" type="radio" id="toy" name="category" value="toy">
+          <label  class="order-form__label order-form__label--radio" for="toy">Детская игрушка</label>
         </fieldset>
         <fieldset class="order-form__fieldset">
           <legend class="order-form__legend">Цвет</legend>
-          <input type="checkbox" id="color-white" name="color" value="white" checked>
-          <label for="color-white">Белый</label>
-          <input type="checkbox" id="color-grey" name="color" value="grey" checked>
-          <label for="color-grey">Серый</label>
-          <input type="checkbox" id="color-tiffany" name="color" value="tiffany">
-          <label for="color-tiffany">Тиффани</label>
-          <input type="checkbox" id="color-black" name="color" value="black">
-          <label for="color-black">Черный</label>
-          <input type="checkbox" id="color-pink" name="color" value="pink">
-          <label for="color-pink">Розовый</label>
-          <input type="checkbox" id="color-orange" name="color" value="orange">
-          <label for="color-orange">Оранжевый</label>
+          <input class="order-form__input order-form__input--checkbox visually-hidden" type="checkbox" id="color-white" name="color" value="white" checked>
+          <label class="order-form__label order-form__label--checkbox" for="color-white">Белый</label>
+          <input class="order-form__input order-form__input--checkbox visually-hidden" type="checkbox" id="color-grey" name="color" value="grey" checked>
+          <label class="order-form__label order-form__label--checkbox" for="color-grey">Серый</label>
+          <input class="order-form__input order-form__input--checkbox visually-hidden" type="checkbox" id="color-tiffany" name="color" value="tiffany">
+          <label class="order-form__label order-form__label--checkbox" for="color-tiffany">Тиффани</label>
+          <input class="order-form__input order-form__input--checkbox visually-hidden" type="checkbox" id="color-black" name="color" value="black">
+          <label class="order-form__label order-form__label--checkbox" for="color-black">Черный</label>
+          <input class="order-form__input order-form__input--checkbox visually-hidden" type="checkbox" id="color-pink" name="color" value="pink">
+          <label class="order-form__label order-form__label--checkbox" for="color-pink">Розовый</label>
+          <input class="order-form__input order-form__input--checkbox visually-hidden" type="checkbox" id="color-orange" name="color" value="orange">
+          <label class="order-form__label order-form__label--checkbox" for="color-orange">Оранжевый</label>
         </fieldset>
         <fieldset class="order-form__fieldset">
           <legend class="order-form__legend">ФИО</legend>
-          <label for="forename">Имя:</label>
+          <label class="order-form__label" for="forename">Имя:</label>
           <input id="forename" name="forename" type="text" placeholder="Введите ваше имя*" required>
-          <label for="surname">Фамилия:</label>
+          <label class="order-form__label" for="surname">Фамилия:</label>
           <input id="surname" name="surname" type="text" placeholder="Укажите фамилию*" required>
-          <label for="patronymic">Отчество:</label>
+          <label class="order-form__label" for="patronymic">Отчество:</label>
           <input id="patronymic" name="patronymic" type="text" placeholder="Отчество, если желаете">
         </fieldset>
         <fieldset class="order-form__fieldset">
