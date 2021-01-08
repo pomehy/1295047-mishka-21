@@ -1,11 +1,11 @@
-.category__list {
+.category-product__list {
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
-.category__item {
+.category-product__item {
   position: relative;
   display: flex;
 
@@ -51,7 +51,7 @@
   }
 }
 
-.category__item-inner {
+.category-product__item-inner {
   display: flex;
   width: 320px;
   margin-right: auto;
@@ -61,7 +61,7 @@
   box-sizing: border-box;
 }
 
-.category__link {
+.category-product__link {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -83,18 +83,29 @@
 
   &:hover,
   &:focus {
-    .category__icon {
+    .category-product__icon {
       fill: rgba($fancy-color-dark, 0.7%);
     }
   }
 
   &:active {
-    .category__icon {
+    .category-product__icon {
       fill: rgba($fancy-color-dark, 0.3%);
     }
   }
 }
 
-.category__icon {
+.category-product__icon {
+  position: relative;
   fill: rgba($fancy-color-dark, 0.5%);
+}
+
+.category-product__icon--decor {
+  top: 6px;
+  right: 6px;
+}
+
+.category-product__icon--toys {
+  top: 3px;
+  right: -3px;
 }
