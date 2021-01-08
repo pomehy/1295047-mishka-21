@@ -3,10 +3,17 @@
 }
 
 .page-main__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 177px;
   background-color: $bg-color;
 }
 
 .page-main__title {
+  margin: 0;
+
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
@@ -36,4 +43,14 @@
   padding-top: 44px;
 
   box-sizing: border-box;
+}
+
+.page-main__order-form {
+  padding-top: 17px;
+  padding-bottom: 55px;
+}
+
+.page-main__catalog {
+  padding-top: 30px;
+  padding-bottom: 58px;
 }
