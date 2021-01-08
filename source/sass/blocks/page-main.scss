@@ -19,5 +19,21 @@
 }
 
 .page-main__features {
+  position: relative;
   padding-top: 31px;
+  padding-bottom: 36px;
+
+  box-sizing: border-box;
+}
+
+.page-main__reviews {
+  padding-top: 21px;
+  padding-bottom: 45px;
+}
+
+.page-main__contacts {
+  position: relative;
+  padding-top: 44px;
+
+  box-sizing: border-box;
 }

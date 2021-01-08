@@ -1,4 +1,6 @@
 .page-footer {
+  padding-top: 20px;
+  padding-bottom: 22px;
   background-color: $bg-color;
 }
 
@@ -8,4 +10,12 @@
 
 .page-footer__logo {
   display: none;
+}
+
+.page-footer__socials {
+  margin-bottom: 16px;
+}
+
+.page-footer__copyright {
+  padding-top: 29px;
 }
