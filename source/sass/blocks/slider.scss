@@ -5,3 +5,35 @@
 .slider__item--active {
   display: block;
 }
+
+.slider__toggle-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 29px;
+  margin-bottom: 39px;
+}
+
+.slider__toggle {
+  display: flex;
+  width: 100%;
+  height: 52px;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-image: url("../img/decor/slider-arrow.svg");
+
+  border: 1px solid #ececec;
+
+  cursor: pointer;
+
+  @include status;
+}
+
+.slider__toggle--next {
+  border-left: none;
+  transform: rotate(180deg);
+}
