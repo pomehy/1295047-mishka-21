@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +9,7 @@
 <body class="page-body">
   <header class="page-header">
     <div class="page-header__wrapper">
-      <nav class="page-header__main-nav main-nav">
+      <nav class="page-header__main-nav main-nav main-nav--active">
         <a class="main-nav__logo logo logo--header" href="index.html">
           <img class="logo__image" src="img/mishka-logo-mobile.svg" alt="Логотип магазина Мишка" width="86" height="35">
         </a>
@@ -24,24 +23,32 @@
           <li class="main-nav__item">
             <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--hidden">
             <a class="main-nav__link" href="#">Новые поступления</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--hidden">
             <a class="main-nav__link" href="#">Распродажа</a>
           </li>
         </ul>
+        <div class="main-nav__user-menu user-menu">
+          <ul class="user-menu__list">
+            <li class="user-menu__item">
+              <a href="#" class="user-menu__link">
+                <svg class="user-menu__icon" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.7 16.06l-3.48-3.48a7.63 7.63 0 001.53-4.7c0-4.4-3.48-7.88-7.88-7.88A7.81 7.81 0 000 7.88c0 4.4 3.48 7.87 7.88 7.87 1.73 0 3.37-.61 4.7-1.53l3.48 3.47c.2.2.4.31.82.31.6 0 1.12-.51 1.12-1.13 0-.2-.1-.5-.3-.81zM2.24 7.88a5.67 5.67 0 015.63-5.63 5.67 5.67 0 015.62 5.63 5.67 5.67 0 01-5.63 5.62 5.67 5.67 0 01-5.62-5.63z"/>
+                </svg>
+                Поиск по сайту</a>
+            </li>
+            <li class="user-menu__item">
+              <a href="#" class="user-menu__link cart">
+                <svg class="user-menu__icon" width="20" height="19" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.23 7.24h-3.38L12.56.4c-.2-.4-.58-.5-.97-.3-.38.2-.48.6-.29 1l3 6.14H5.5l3-6.13c.2-.4 0-.8-.29-1-.38-.21-.77 0-.96.3L3.96 7.23H.77c-.38 0-.77.3-.77.8 0 .4.29.8.77.8h.2l.87 3.02c-.2.1-.3.3-.3.6 0 .4.3.7.68.7L3.86 19h12.28l1.64-5.83c.38 0 .67-.3.67-.7 0-.2-.1-.5-.29-.6l.87-3.02h.2c.38 0 .77-.3.77-.8 0-.51-.39-.81-.77-.81zm-4.35 10.15H4.83l-1.16-4.32h12.47l-1.26 4.32zm1.55-5.83H3.19l-.77-2.81H17.2l-.77 2.81z"/>
+              </svg>
+                Корзина:&thinsp;<span class="cart__value">пока пуста</span></a>
+            </li>
+          </ul>
+        </div>
       </nav>
-      <div class="user-menu">
-        <ul class="user-menu__list">
-          <li class="user-menu__item">
-            <a href="" class="user-menu__link">Поиск по сайту</a>
-          </li>
-          <li class="user-menu__item">
-            <a href="" class="user-menu__link cart">Корзина: <span class="cart__value">Пока пуста</span></a>
-          </li>
-        </ul>
-      </div>
     </div>
   </header>
   <main class="page-main">
@@ -57,7 +64,7 @@
           <a class="product__image-wrapper" href="#">
             <picture>
               <img class="product__image" src="img/product__1-mobile.jpg" srcset="img/product__1-mobile@2x.jpg 2x"
-                alt="Вязанный зайчик в голубом костюме">
+                alt="Вязанный зайчик в голубом костюме" width="260" height="195">
             </picture>
           </a>
           <div class="product__content">
@@ -66,7 +73,7 @@
             </h3>
             <p class="product__description">Рост 30 см, вес 200 г</p>
             <div class="product__buy">
-              <span class="product__price">1200 руб.</span>
+              <span class="product__price">1 200 руб.</span>
               <a class="product__add-cart" href="#">
                 <svg width="20" height="19" xmlns="http://www.w3.org/2000/svg"><path d="M19.23 7.24h-3.38L12.56.4c-.2-.4-.58-.5-.97-.3-.38.2-.48.6-.29 1l3 6.14H5.5l3-6.13c.2-.4 0-.8-.29-1-.38-.21-.77 0-.96.3L3.96 7.23H.77c-.38 0-.77.3-.77.8 0 .4.29.8.77.8h.2l.87 3.02c-.2.1-.3.3-.3.6 0 .4.3.7.68.7L3.86 19h12.28l1.64-5.83c.38 0 .67-.3.67-.7 0-.2-.1-.5-.29-.6l.87-3.02h.2c.38 0 .77-.3.77-.8 0-.51-.39-.81-.77-.81zm-4.35 10.15H4.83l-1.16-4.32h12.47l-1.26 4.32zm1.55-5.83H3.19l-.77-2.81H17.2l-.77 2.81z" /></svg>
               </a>
@@ -102,7 +109,7 @@
           </a>
           <div class="product__content">
             <h3 class="product__name">
-              <a class="product__link" href="#">Большая корзинкадля игрушек</a>
+              <a class="product__link" href="#">Большая корзинка для игрушек</a>
             </h3>
             <p class="product__description">Диаметр 30 см, высота 30 см</p>
             <div class="product__buy">
@@ -115,16 +122,16 @@
         </article>
         <article class="catalog__product-video product-video">
           <h3 class="product-video__title">Процесс производства</h3>
-          <div class="product-video__wrapper">
+          <div class="product-video__movie-wrapper">
             <picture>
               <img class="product-video__image-overlay" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x"
                 alt="Вязанная корзинка серо-бирюзового цвета">
             </picture>
             <video class="product-video__movie" src=""></video>
-            <a class="product-video__button" href="#"></a>
+            <a class="product-video__play-button" href="#"></a>
           </div>
           <div class="product-video__content">
-            <p class="product-video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+            <p class="product-video__description">По&nbsp;просьбам&nbsp;наших&nbsp;любимых фолловеров мы сняли для вас подробное видео о том,
               как появляются наши товары.</p>
             <a class="button product-video__button" href="#">Сделать заказ</a>
           </div>
@@ -179,6 +186,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

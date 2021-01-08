@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,24 +23,32 @@
           <li class="main-nav__item">
             <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--hidden">
             <a class="main-nav__link" href="#">Новые поступления</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--hidden">
             <a class="main-nav__link" href="#">Распродажа</a>
           </li>
         </ul>
+        <div class="main-nav__user-menu user-menu">
+          <ul class="user-menu__list">
+            <li class="user-menu__item">
+              <a href="#" class="user-menu__link">
+                <svg class="user-menu__icon" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.7 16.06l-3.48-3.48a7.63 7.63 0 001.53-4.7c0-4.4-3.48-7.88-7.88-7.88A7.81 7.81 0 000 7.88c0 4.4 3.48 7.87 7.88 7.87 1.73 0 3.37-.61 4.7-1.53l3.48 3.47c.2.2.4.31.82.31.6 0 1.12-.51 1.12-1.13 0-.2-.1-.5-.3-.81zM2.24 7.88a5.67 5.67 0 015.63-5.63 5.67 5.67 0 015.62 5.63 5.67 5.67 0 01-5.63 5.62 5.67 5.67 0 01-5.62-5.63z"/>
+                </svg>
+                Поиск по сайту</a>
+            </li>
+            <li class="user-menu__item">
+              <a href="#" class="user-menu__link cart">
+                <svg class="user-menu__icon" width="20" height="19" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.23 7.24h-3.38L12.56.4c-.2-.4-.58-.5-.97-.3-.38.2-.48.6-.29 1l3 6.14H5.5l3-6.13c.2-.4 0-.8-.29-1-.38-.21-.77 0-.96.3L3.96 7.23H.77c-.38 0-.77.3-.77.8 0 .4.29.8.77.8h.2l.87 3.02c-.2.1-.3.3-.3.6 0 .4.3.7.68.7L3.86 19h12.28l1.64-5.83c.38 0 .67-.3.67-.7 0-.2-.1-.5-.29-.6l.87-3.02h.2c.38 0 .77-.3.77-.8 0-.51-.39-.81-.77-.81zm-4.35 10.15H4.83l-1.16-4.32h12.47l-1.26 4.32zm1.55-5.83H3.19l-.77-2.81H17.2l-.77 2.81z"/>
+              </svg>
+                Корзина:&thinsp;<span class="cart__value">пока пуста</span></a>
+            </li>
+          </ul>
+        </div>
       </nav>
-      <div class="user-menu">
-        <ul class="user-menu__list">
-          <li class="user-menu__item">
-            <a href="" class="user-menu__link">Поиск по сайту</a>
-          </li>
-          <li class="user-menu__item">
-            <a href="" class="user-menu__link cart">Корзина: <span class="cart__value">Пока пуста</span></a>
-          </li>
-        </ul>
-      </div>
     </div>
   </header>
   <main class="page-main">
@@ -99,19 +106,19 @@
             </div>
           </div>
         </fieldset>
-        <fieldset class="order-form__fieldset">
+        <fieldset class="order-form__fieldset order-form__fieldset--contacts">
           <div class="order-form__wrapper">
             <legend class="order-form__legend">Тел</legend>
             <div class="order-form__item">
               <label for="phone-1"><span class="visually-hidden">Номер телефона</span></label>
               <input class="order-form__input order-form__input--phone" id="phone-1" name="phone-1" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-              <svg class="order-form__icon" width="25" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M17.44 24h-1.1a17.63 17.63 0 01-11.2-5.73A18.8 18.8 0 010 6.72V5.33c.1-.89.5-1.48 1.1-2.07.61-.7 1.62-1.48 2.53-1.58.7 0 1.81.5 2.22 1.09.4.49.6 1.58.8 2.37.2.88.6 1.97.5 2.76-.2 1.19-1.8 1.68-2.21 2.57a16.4 16.4 0 007.56 8.2c.8-.5 1.61-1.88 2.82-1.88.4 0 1.01.2 1.41.3.5.1.91.3 1.31.49.71.3 2.02.6 2.42 1.19.4.59.7 1.58.6 2.17-.3 1.28-2.41 2.66-3.62 3.06zM12.6 1.48A10.8 10.8 0 0123.5 12.15H25C25 5.43 19.46 0 12.6 0v1.48z"/><path d="M12.6 9.19v1.58c.8 0 1.41.59 1.41 1.38h1.62a3 3 0 00-3.03-2.96zM12.6 6.12a6.11 6.11 0 016.15 6.03h1.61c0-4.15-3.42-7.5-7.66-7.5v1.47h-.1z"/></svg>
+              <svg class="order-form__icon order-form__icon--phone" width="25" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M17.44 24h-1.1a17.63 17.63 0 01-11.2-5.73A18.8 18.8 0 010 6.72V5.33c.1-.89.5-1.48 1.1-2.07.61-.7 1.62-1.48 2.53-1.58.7 0 1.81.5 2.22 1.09.4.49.6 1.58.8 2.37.2.88.6 1.97.5 2.76-.2 1.19-1.8 1.68-2.21 2.57a16.4 16.4 0 007.56 8.2c.8-.5 1.61-1.88 2.82-1.88.4 0 1.01.2 1.41.3.5.1.91.3 1.31.49.71.3 2.02.6 2.42 1.19.4.59.7 1.58.6 2.17-.3 1.28-2.41 2.66-3.62 3.06zM12.6 1.48A10.8 10.8 0 0123.5 12.15H25C25 5.43 19.46 0 12.6 0v1.48z"/><path d="M12.6 9.19v1.58c.8 0 1.41.59 1.41 1.38h1.62a3 3 0 00-3.03-2.96zM12.6 6.12a6.11 6.11 0 016.15 6.03h1.61c0-4.15-3.42-7.5-7.66-7.5v1.47h-.1z"/></svg>
             </div>
           </div>
         </fieldset>
-        <fieldset class="order-form__fieldset">
+        <fieldset class="order-form__fieldset order-form__fieldset--contacts">
           <div class="order-form__wrapper">
-            <legend class="order-form__legend">E-mail</legend>
+            <legend class="order-form__legend order-form__legend--mail">E-mail</legend>
             <div class="order-form__item">
               <label for="mail-1"><span class="visually-hidden">Адрес почты</span></label>
               <input class="order-form__input order-form__input--mail" id="mail-1" name="mail-1" type="email"
@@ -123,7 +130,7 @@
             </div>
           </div>
         </fieldset>
-        <fieldset class="order-form__fieldset">
+        <fieldset class="order-form__fieldset order-form__fieldset--textarea">
           <div class="order-form__wrapper">
             <legend class="order-form__legend">Доп</legend>
             <label for="textarea-info" class="visually-hidden">Дополнительная информация</label>
@@ -184,6 +191,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/scripts.js"></script>
 </body>
-
 </html>
