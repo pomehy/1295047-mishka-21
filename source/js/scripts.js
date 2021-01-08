@@ -4,5 +4,7 @@ let mainNav = document.querySelector('.main-nav');
 mainNavToggle.addEventListener('click', function(evt) {
   evt.preventDefault();
   mainNav.classList.toggle('main-nav--active');
-  console.log('dfdfdf');
 })
+
+mainNav.classList.remove('main-nav--nojs');
+mainNav.classList.remove('main-nav--active');
