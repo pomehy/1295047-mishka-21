@@ -4,12 +4,22 @@
 
 .intro__wrapper {
   @include container;
+
+  background-image: url("../img/intro-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: -18px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro-mobile@2x.jpg");
+  }
 }
 
 .intro__title {
   margin: 0;
   padding-top: 73px;
-  padding-bottom: 119px;
+  padding-bottom: 120px;
 
   font-weight: 700;
   font-size: 27px;
