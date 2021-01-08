@@ -3,6 +3,8 @@
 }
 
 .order-form__description {
+  margin-top: 0;
+
   font-size: 13px;
   line-height: 24px;
 
@@ -11,17 +13,63 @@
 
 .order-form__fieldset {
   margin: 0;
-  padding: 0;
+  padding-top: 16px;
+  padding-right: 0;
+  padding-bottom: 27px;
+  padding-left: 0;
 
   border: none;
 }
 
+.order-form__fieldset--contacts {
+  padding-top: 6px;
+
+  .order-form__legend {
+    margin-bottom: 7px;
+  }
+}
+
 .order-form__legend {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 33px;
+  padding: 0;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
   color: $fancy-color;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+
+    width: 77%;
+    height: 1px;
+
+    background-color: $fancy-color;
+  }
+}
+
+.order-form__legend--mail {
+  margin-bottom: 8px;
+
+  &::before {
+    width: 70%;
+  }
+}
+
+.order-form__fieldset--textarea {
+  padding-top: 8px;
+  padding-bottom: 12px;
+
+  .order-form__legend {
+    margin-bottom: 23px;
+  }
 }
 
 .order-form__item {
@@ -45,8 +93,9 @@
 }
 
 .order-form__label--radio {
+  margin-bottom: 20px;
+  padding-top: 3px;
   padding-left: 60px;
-  margin-bottom: 24px;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -57,8 +106,8 @@
     position: absolute;
     left: 0;
 
-    width: 42px;
-    height: 42px;
+    width: 40px;
+    height: 40px;
 
     border: 2px solid $basic-grey;
     border-radius: 50%;
@@ -67,7 +116,7 @@
   &::after {
     content: "";
     position: absolute;
-    left: 13px;
+    left: 12px;
 
     display: none;
 
@@ -101,7 +150,8 @@
 
 
 .order-form__label--checkbox {
-  margin-bottom: 42px;
+  margin-bottom: 41px;
+  padding-top: 2px;
   padding-left: 60px;
 
   &:last-of-type {
@@ -160,9 +210,10 @@
 .order-form__input {
   z-index: 1;
   width: 100%;
-  padding-top: 16px;
+  padding-top: 15px;
   padding-right: 30px;
-  padding-bottom: 16px;
+  padding-bottom: 15px;
+  margin-bottom: 23px;
 
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: 400;
@@ -179,6 +230,10 @@
   border-bottom: 2px solid $basic-black;
 
   box-sizing: border-box;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 
   &::placeholder {
     color: rgba($basic-grey, 0.3%);
@@ -197,9 +252,14 @@
 
 .order-form__icon {
   position: absolute;
-  right: 0;
+  right: 2px;
 
   fill: rgba($basic-black, 0.2%);
+}
+
+.order-form__icon--phone {
+  top: 9px;
+  right: 7px;
 }
 
 .order-form__input--textarea {
@@ -221,10 +281,14 @@
 }
 
 .order-form__note {
+  margin-top: 0;
+
   font-size: 14px;
   line-height: 16px;
 }
 
 .order-form__button {
+  margin-top: 16px;
+
   width: 100%;
 }
