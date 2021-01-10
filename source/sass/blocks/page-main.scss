@@ -20,29 +20,69 @@
   text-align: center;
 }
 
+.page-main__intro {
+  position: relative;
+}
+
 .page-main__promo-product {
   padding-top: 31px;
   padding-bottom: 36px;
-}
 
-.page-main__features {
-  position: relative;
-  padding-top: 31px;
-  padding-bottom: 36px;
+  @media (min-width: $tablet-width) {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
 
-  box-sizing: border-box;
+  @media (min-width: $desktop-width) {
+    padding-top: 72px;
+    padding-bottom: 71px;
+  }
 }
 
 .page-main__reviews {
   padding-top: 21px;
   padding-bottom: 45px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 16px;
+    padding-bottom: 115px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 21px;
+    padding-bottom: 164px;
+  }
 }
 
 .page-main__contacts {
   position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   padding-top: 44px;
 
-  box-sizing: border-box;
+  @media (min-width: $tablet-width) {
+    padding-top: 87px;
+    padding-bottom: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 94px;
+    padding-bottom: 105px;
+    padding-right: 50px;
+    padding-left: 50px;
+
+    width: 1150px;
+
+    box-sizing: border-box;
+  }
 }
 
 .page-main__order-form {

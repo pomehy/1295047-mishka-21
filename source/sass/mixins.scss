@@ -5,6 +5,16 @@
   padding-right: 30px;
   padding-left: 30px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+  }
 }
 
 @mixin status {
@@ -23,4 +33,14 @@
   font-size: 25px;
   line-height: 30px;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

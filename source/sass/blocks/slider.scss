@@ -1,9 +1,16 @@
+.slider {
+  overflow: hidden;
+}
+
 .slider__item {
   display: none;
 }
 
 .slider__item--active {
   display: block;
+
+  animation-name: position, fade;
+  animation-duration: 0.5s, 0.5s;
 }
 
 .slider__toggle-wrapper {
@@ -13,6 +20,15 @@
 
   margin-top: 29px;
   margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    margin: 0;
+    width: 175px;
+  }
 }
 
 .slider__toggle {
@@ -31,9 +47,34 @@
   cursor: pointer;
 
   @include status;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .slider__toggle--next {
   border-left: none;
   transform: rotate(180deg);
+}
+
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes position {
+  0% {
+    transform: translateX(1000px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }

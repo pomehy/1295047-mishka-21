@@ -1,5 +1,7 @@
 .page-header {
   position: relative;
+  z-index: 2;
+  background-color: $basic-white;
 
   &::before {
     content: "";
@@ -24,6 +26,15 @@
   }
 
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+
+    &::before {
+      bottom: 0;
+    }
+  }
 }
 
 .page-header__wrapper {
@@ -38,4 +49,14 @@
 
   padding-top: 21px;
   padding-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  // @media (min-width: $desktop-width) {
+  //   display: flex;
+  // }
 }
