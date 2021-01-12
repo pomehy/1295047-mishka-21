@@ -89,13 +89,13 @@
   &:hover,
   &:focus {
     .category-product__icon {
-      fill: rgba($fancy-color-dark, 0.7%);
+      fill: transparentize($fancy-color-dark, 0.3);
     }
   }
 
   &:active {
     .category-product__icon {
-      fill: rgba($fancy-color-dark, 0.3%);
+      fill: transparentize($fancy-color-dark, 0.7);
     }
   }
 
@@ -111,7 +111,7 @@
 
 .category-product__icon {
   position: relative;
-  fill: rgba($fancy-color-dark, 0.5%);
+  fill: transparentize($fancy-color-dark, 0.5);
 }
 
 .category-product__icon--decor {

@@ -1,9 +1,10 @@
 @mixin container {
-  min-width: 320px;
+  width: 320px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 30px;
   padding-left: 30px;
+
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {

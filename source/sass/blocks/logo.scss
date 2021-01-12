@@ -15,6 +15,10 @@
   }
 }
 
+.logo--no-link {
+  pointer-events: none;
+}
+
 .logo__image {
   display: flex;
 }

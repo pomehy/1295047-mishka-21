@@ -9,8 +9,13 @@
 .slider__item--active {
   display: block;
 
-  animation-name: position, fade;
-  animation-duration: 0.5s, 0.5s;
+  animation-name: fade;
+  animation-duration: 0.5s;
+
+  @media (min-width: $tablet-width) {
+    animation-name: position, fade;
+    animation-duration: 0.5s, 0.5s;
+  }
 }
 
 .slider__toggle-wrapper {
@@ -57,7 +62,6 @@
   border-left: none;
   transform: rotate(180deg);
 }
-
 
 @keyframes fade {
   0% {

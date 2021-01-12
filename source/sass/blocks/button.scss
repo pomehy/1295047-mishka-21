@@ -27,6 +27,6 @@
   }
 
   &:active {
-    color: rgba($basic-white, 0.3%);
+    color: transparentize($basic-white, 0.7);
   }
 }

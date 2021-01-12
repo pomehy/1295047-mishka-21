@@ -1,6 +1,7 @@
 .page-header {
   position: relative;
   z-index: 2;
+
   background-color: $basic-white;
 
   &::before {
@@ -39,6 +40,7 @@
 
 .page-header__wrapper {
   @include container;
+  width: 100%;
 }
 
 .page-header__main-nav {
