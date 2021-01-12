@@ -65,6 +65,10 @@
   border-color: $fancy-color;
 }
 
+.form-size__input-radio:focus + .form-size__label {
+  outline: $fancy-color-dark solid 3px;
+}
+
 .form-size__button {
   margin-top: 32px;
   padding-top: 20px;
