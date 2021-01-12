@@ -1,11 +1,19 @@
 let mainNavToggle = document.querySelector('.main-nav__toggle');
 let mainNav = document.querySelector('.main-nav');
+let promoButtonProduct = document.querySelector('.promo-product__button');
+let productAddCartButtons = document.querySelectorAll('.product__add-cart');
+let modalAddCart = document.querySelector('.add-cart');
+let modalOverlay = document.querySelector('.modal__overlay');
+let formSize = document.querySelector('form-size');
 
 let slider = document.querySelector('.slider');
 let sliderItems = document.querySelectorAll('.slider__item');
 
 let sliderTogglePrev = document.querySelector('.slider__toggle--prev');
 let sliderToggleNext = document.querySelector('.slider__toggle--next');
+
+let videoPlayButton = document.querySelector('.product-video__play-button');
+let videoOverlay = document.querySelector('.product-video__image-overlay');
 
 mainNavToggle.addEventListener('click', function(evt) {
   evt.preventDefault();
@@ -14,6 +22,37 @@ mainNavToggle.addEventListener('click', function(evt) {
 
 mainNav.classList.remove('main-nav--nojs');
 mainNav.classList.remove('main-nav--active');
+
+if (modalAddCart) {
+  if (promoButtonProduct) {
+    promoButtonProduct.addEventListener('click', function(evt) {
+      evt.preventDefault();
+      modalAddCart.classList.add('modal--show');
+      modalAddCart.focus();
+    });
+  }
+
+  modalOverlay.addEventListener('click', function(evt) {
+    modalAddCart.classList.remove('modal--show');
+  })
+
+  window.addEventListener('keydown', function (evt) {
+    if (evt.keyCode === 27) {
+      if (modalAddCart.classList.contains('modal--show')) {
+        evt.preventDefault();
+        modalAddCart.classList.remove('modal--show');
+      }
+    }
+  });
+
+  Array.from(productAddCartButtons).forEach(productAddCartButton =>
+    productAddCartButton.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      modalAddCart.classList.add('modal--show');
+    })
+  );
+
+}
 
 if (slider) {
   /* Устанавливаем индекс слайда по умолчанию */
@@ -45,5 +84,10 @@ if (slider) {
     }
     sliderItems[slideIndex - 1].classList.add('slider__item--active');
   }
-
+}
+if (videoPlayButton) {
+  videoPlayButton.addEventListener('click', function(evt) {
+    evt.preventDefault();
+    videoOverlay.classList.add('product-video__image-overlay--hidden');
+  })
 }
