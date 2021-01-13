@@ -83,6 +83,7 @@
 .order-fieldset__list {
   margin: 0;
   padding: 0;
+
   list-style: none;
 
   @media (min-width: $tablet-width) {
@@ -165,7 +166,6 @@
   }
 }
 
-
 .order-fieldset__legend {
   position: relative;
   display: flex;
@@ -210,14 +210,13 @@
 
   display: flex;
   align-items: center;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
-
   color: $basic-black;
 
   cursor: pointer;
-
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
@@ -386,6 +385,7 @@
 
 .order-fieldset__input {
   z-index: 1;
+
   width: 100%;
   padding-top: 15px;
   padding-right: 30px;
@@ -396,7 +396,6 @@
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
-
   color: $basic-grey;
 
   background-color: transparent;
@@ -454,7 +453,6 @@
     padding-top: 15px;
   }
 }
-
 
 .order-fieldset__icon {
   position: absolute;

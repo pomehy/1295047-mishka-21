@@ -20,6 +20,7 @@
 
 .category-product__item {
   position: relative;
+
   display: flex;
   width: 100%;
 
@@ -29,6 +30,7 @@
     content: "";
     position: absolute;
     bottom: -5px;
+
     display: none;
 
     width: 100%;
@@ -81,7 +83,6 @@
   font-size: 19px;
   line-height: 24px;
   color: $basic-white;
-
   text-decoration: none;
 
   box-sizing: border-box;

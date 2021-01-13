@@ -4,7 +4,6 @@ let promoButtonProduct = document.querySelector('.promo-product__button');
 let productAddCartButtons = document.querySelectorAll('.product__add-cart');
 let modalAddCart = document.querySelector('.add-cart');
 let modalOverlay = document.querySelector('.modal__overlay');
-let formSize = document.querySelector('form-size');
 
 let slider = document.querySelector('.slider');
 let sliderItems = document.querySelectorAll('.slider__item');
@@ -51,7 +50,6 @@ if (modalAddCart) {
       modalAddCart.classList.add('modal--show');
     })
   );
-
 }
 
 if (slider) {

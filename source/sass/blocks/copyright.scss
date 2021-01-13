@@ -7,12 +7,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   font-weight: 700;
   font-size: 19px;
   line-height: 18px;
-  text-decoration: none;
-
   color: $basic-black;
+  text-decoration: none;
 
   &:hover,
   &:focus {
