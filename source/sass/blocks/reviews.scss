@@ -17,6 +17,12 @@
       background-repeat: no-repeat;
       background-size: contain;
     }
+
+    @media (min-resolution: 2dppx) {
+      &::before {
+        background-image: url("../img/reviews-tablet@2x.jpg");
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
