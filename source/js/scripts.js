@@ -14,13 +14,17 @@ let sliderToggleNext = document.querySelector('.slider__toggle--next');
 let videoPlayButton = document.querySelector('.product-video__play-button');
 let videoOverlay = document.querySelector('.product-video__image-overlay');
 
+let mainMap = document.querySelector('.main-map__map');
+let mainMapImage = document.querySelector('.main-map__image-wrapper');
+
+mainNav.classList.remove('main-nav--nojs');
+mainNav.classList.remove('main-nav--active');
+mainMap.classList.remove('main-map__map--nojs');
+
 mainNavToggle.addEventListener('click', function(evt) {
   evt.preventDefault();
   mainNav.classList.toggle('main-nav--active');
 })
-
-mainNav.classList.remove('main-nav--nojs');
-mainNav.classList.remove('main-nav--active');
 
 if (modalAddCart) {
   if (promoButtonProduct) {
