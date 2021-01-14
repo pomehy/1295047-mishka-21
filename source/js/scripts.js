@@ -19,7 +19,10 @@ let mainMapImage = document.querySelector('.main-map__image-wrapper');
 
 mainNav.classList.remove('main-nav--nojs');
 mainNav.classList.remove('main-nav--active');
-mainMap.classList.remove('main-map__map--nojs');
+
+if(mainMap) {
+  mainMap.classList.remove('main-map__map--nojs');
+}
 
 mainNavToggle.addEventListener('click', function(evt) {
   evt.preventDefault();
