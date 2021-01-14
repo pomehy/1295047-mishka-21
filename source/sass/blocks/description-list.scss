@@ -1,0 +1,35 @@
+.description-list__item {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  padding-top: 12px;
+  padding-bottom: 8px;
+
+  font-size: 15px;
+  line-height: 20px;
+  color: $basic-grey;
+
+  box-sizing: border-box;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: #ececec;
+
+    bottom: -5px;
+  }
+}
+
+.description-list__termin {
+  min-width: 100px;
+}
+
+.description-list__value {
+  margin: 0;
+}

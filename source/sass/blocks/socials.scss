@@ -1,0 +1,40 @@
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.socials__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.socials__item {
+  margin-right: 31px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+
+  &:hover,
+  &:focus {
+    .socials__icon {
+      fill: #46c1ae;
+    }
+  }
+}
+
+.socials__icon {
+  fill: #231f20;
+}

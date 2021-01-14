@@ -1,0 +1,98 @@
+.user-menu__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+}
+
+.user-menu__item {
+  position: relative;
+  display: flex;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+
+    width: 100vw;
+    height: 1px;
+
+    background-color: #ececec;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      left: 0;
+
+      width: 1px;
+      height: 100%;
+    }
+  }
+}
+
+.user-menu__link {
+  display: flex;
+  align-items: center;
+  padding-top: 28px;
+  padding-bottom: 27px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: $basic-black;
+  text-decoration: none;
+
+  fill: transparentize($basic-black, 0.8);
+
+  &:hover,
+  &:focus {
+    color: transparentize($basic-black, 0.4);
+    fill: $fancy-color;
+  }
+
+  &:active {
+    color: transparentize($basic-black, 0.7);
+    fill: transparentize($fancy-color, 0.7);
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 34px;
+    padding-bottom: 31px;
+    padding-right: 2px;
+    padding-left: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 4px;
+  }
+}
+
+.user-menu__link--search {
+  @media (min-width: $desktop-width) {
+    padding-left: 33px;
+  }
+}
+
+.user-menu__text {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.user-menu__icon {
+  padding-right: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 30px;
+  }
+}

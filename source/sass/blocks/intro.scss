@@ -1,0 +1,107 @@
+.intro {
+  background-color: #fafafa;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -65px;
+
+    display: none;
+    width: 100%;
+    height: 65px;
+
+    background-color: #fafafa;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -12px;
+      left: 0;
+      z-index: 1;
+
+      width: 100%;
+      height: 24px;
+
+      background-image: url("../img/decor/zigzag-white.svg");
+      background-repeat: repeat-x;
+      background-size: contain;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      bottom: -17px;
+      height: 34px;
+
+      background-image: url("../img/decor/zigzag-white-desktop.svg");
+      background-position: center;
+    }
+  }
+}
+
+.intro__wrapper {
+  @include container;
+
+  background-image: url("../img/intro-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: -18px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 626px;
+
+    background-image: url("../img/intro-tablet.jpg");
+    background-position-y: -1px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 626px;
+
+    background-image: url("../img/intro-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-desktop@2x.jpg");
+    }
+  }
+}
+
+.intro__title {
+  margin: 0;
+  padding-top: 73px;
+  padding-bottom: 120px;
+
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  color: $basic-black;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 217px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 18px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

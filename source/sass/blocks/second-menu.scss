@@ -1,0 +1,31 @@
+.second-menu {
+  list-style: none;
+}
+
+.second-menu__item {
+  margin-right: 63px;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.second-menu__link {
+  position: relative;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  color: $basic-black;
+  text-decoration: none;
+
+  @include status;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}

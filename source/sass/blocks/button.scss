@@ -1,0 +1,32 @@
+.button {
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+
+  color: $basic-grey;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  background-color: transparent;
+
+  border: 2px solid $basic-grey;
+
+  box-sizing: border-box;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $basic-white;
+    background-color: $basic-grey;
+  }
+
+  &:active {
+    color: transparentize($basic-white, 0.7);
+  }
+}
